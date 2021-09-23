@@ -8,10 +8,12 @@ import random
 load_dotenv(dotenv_path=".envvars")
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-activity=discord.Game(name='Not sure what /s means? Confused by all the /hj\'s?\r\nReact to a message with "❔" to find out what it\'s all about!\r\n(That\'s the :grey_question: emoji)')
+activity=discord.Game(name='Not sure what /s means? Confused by all the /hj\'s? React to a message with "❔" to find out what it\'s all about!')
 
 client = discord.Client(activity=activity)
 
+# Source: some random list from the internet. This would probably be better
+# served as a server-side configurable list, but oh well...
 key = {
     "j":"joking",
     "hj":"half-joking",
