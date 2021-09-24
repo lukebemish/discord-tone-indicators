@@ -72,7 +72,7 @@ def text_parser(message):
         parsed.append(parsing)
     if len(parsed)==0:
         return getRealName(message) + " wasn't using any tone indicators that I know of!"
-    return getRealName(message)+" was using tone indicators: "+', '.join(key[e].capitalize() for e in set(parsed))
+    return getRealName(message)+" was using tone indicators: "+', '.join(key[e].capitalize()+" (/"+e+")" for e in set(parsed))
 
 def getRealName(event):
     try:
