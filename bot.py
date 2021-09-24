@@ -8,7 +8,7 @@ import random
 load_dotenv(dotenv_path=".envvars")
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-activity=discord.Game(name='Not sure what /s means? Confused by all the /hj\'s? React to a message with "❔" to find out what it\'s all about!')
+activity=discord.Activity(type=discord.ActivityType.listening, name='❔')
 
 client = discord.Client(activity=activity)
 
