@@ -35,7 +35,7 @@ key = {
     "li":"literally",
     "rh":"rhetorical question",
     "rt":"rhetorical question",
-    "gen":"genuine question",
+    "gen":"genuine",
     "hyp":"hyperbole",
     "c":"copypasta",
     "sx":"sexual intent",
@@ -45,7 +45,11 @@ key = {
     "th":"threat",
     "cb":"clickbait",
     "f":"fake",
-    "g":"genuine"
+    "g":"genuine",
+    "ij":"inside joke",
+    "lu":"little upset",
+    "nbh":"nobody here",
+    "nsrs":"not serious"
     
 }
 
